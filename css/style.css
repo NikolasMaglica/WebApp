@@ -531,16 +531,31 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
   padding: 80px 0;
 }
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.background img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 #about .about-container .background {
   min-height: 334px;
-  background: url(../img/kkkk.jpg) center top no-repeat;
-  background-size: 731px 334px;
+  background: url(../img/ffff.jpg) center top no-repeat;
+  background-size: 773px 334px;
   margin-bottom: 10px;
+}
+.content p {
+  margin-bottom: 13px; /* Smanjuje razmak između <p> elemenata */
+  line-height: 1.6; /* Poboljšava čitljivost teksta */
 }
 
 #about .about-container .content {
-  background: #fff;
+  background: #ffffff;
 }
 
 #about .about-container .title {
@@ -556,7 +571,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container p {
-  line-height: 24px;
+  line-height: 22px;
   text-align: justify;
 
 }
