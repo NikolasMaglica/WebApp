@@ -780,6 +780,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
   padding: 0px 0 10px 0;
 }
+#team .row {
+  justify-content: space-around;
+}
 
 #team .member {
   text-align: center;
