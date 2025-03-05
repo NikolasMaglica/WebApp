@@ -503,6 +503,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 /* Sections Header
 --------------------------------*/
+.section-header {
+  margin-bottom: 6vh; /* ili padding-bottom: 5vh; */
+}
+
 .section-header .section-title {
   font-size: 32px;
   color: #111;
@@ -607,7 +611,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
-  background: #fff;
+  background: #FFF;
   background-size: cover;
   padding: 0px 0 10px 0;
 }
