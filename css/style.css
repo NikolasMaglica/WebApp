@@ -18,6 +18,9 @@ body {
   opacity: 0.8;
 
 }
+iframe {
+  margin-bottom: 40px;
+}
 strong {
   color: #000;
 }
@@ -531,7 +534,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .background {
   min-height: 334px;
-  background: url(../img/logostranica.jpg) center top no-repeat;
+  background: url(../img/kkkk.jpg) center top no-repeat;
   background-size: 731px 334px;
   margin-bottom: 10px;
 }
