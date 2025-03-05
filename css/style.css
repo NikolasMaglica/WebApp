@@ -528,8 +528,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: #fff;
+  background: #000000;
   padding: 80px 0;
+  color:white;
+}
+#about .content h2,
+#about .content p,
+#about .content strong {
+  color: white; /* Osigurava da su i naslovi i podebljani tekst bijeli */
 }
 .about-container {
   display: flex;
@@ -545,7 +551,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .background {
   min-height: 334px;
-  background: url(../img/ffff.jpg) center top no-repeat;
+  background: url(../img/lo.png) center top no-repeat;
   background-size: 773px 334px;
   margin-bottom: 10px;
 }
@@ -555,11 +561,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .content {
-  background: #ffffff;
+  background: #000000;
 }
 
 #about .about-container .title {
-  color: #020000;
+  color: #ffffff;
   font-weight: 700;
   font-size: 32px;
 }
