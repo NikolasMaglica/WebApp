@@ -710,6 +710,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .description {
   font-size: 14px;
   line-height: 24px;
+  
 }
 
 /* Call To Action Section
@@ -839,7 +840,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member span {
   font-style: italic;
   display: block;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 #team .member .social {
@@ -848,6 +849,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team .member .social a {
   color: #b3b3b3;
+}
+#team .member p {
+  margin-bottom: 0; /* Uklanja donju marginu na <p> elementu */
+
 }
 
 #team .member .social a:hover {
