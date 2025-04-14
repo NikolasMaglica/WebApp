@@ -185,6 +185,6 @@ name:document.getElementById("body").value,
 
 }
 
-emailjs.send("service_z47trhr","service_z47trhr",parms).then(alert("Email sent!!"))
+emailjs.send("service_z47trhr","template_rbe9hip",parms).then(alert("Email sent!!"))
 
 }
