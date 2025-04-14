@@ -173,3 +173,18 @@ function updateFormPlaceholders(lang) {
     document.getElementById('subject').placeholder = translations[lang].subject;
     document.querySelector('textarea').placeholder = translations[lang].message;
 }
+
+function SendMail()
+{
+let parms={
+name:document.getElementById("name").value,
+name:document.getElementById("email").value,
+name:document.getElementById("subject").value,
+name:document.getElementById("body").value,
+
+
+}
+
+emailjs.send("service_z47trhr","service_z47trhr",parms).then(alert("Email sent!!"))
+
+}

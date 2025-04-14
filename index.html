@@ -231,7 +231,7 @@
 
           <div class="col-lg-5 col-md-8">
             <div class="form">
-              <div id="sendmessage" class="translate" data-key="send_success">Poruka je poslana. Hvala ti!</div>              <div id="errormessage"></div>
+              <div id="sendmessage" class="translate" data-key="send_success">Poruka je poslana. Hvala Vam!</div>              <div id="errormessage"></div>
               <form action="" method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Ime i prezime " data-rule="minlen:4" data-msg="Molimo Vas unesite minimalno 4 znaka" />
@@ -242,14 +242,14 @@
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Naslov poruke" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Naslov poruke" data-rule="minlen:4" data-msg="Molimo Vas upišite najmanje 8 znakova" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Napišite poruku" placeholder="Poruka"></textarea>
+                  <textarea class="form-control" name="message" id="body" rows="5" data-rule="required" data-msg="Napišite poruku" placeholder="Poruka"></textarea>
                   <div class="validation"></div>
                 </div>
-                <button type="submit" class="translate" data-key="submit_button">Pošalji poruku</button>
+                <button type="submit" class="translate"  onclick="SendMail()">Pošalji poruku</button>
               </form>
             </div>
           </div>
@@ -299,5 +299,15 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
   <script src="script.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "4RTpb84KuMHjw-B1B",
+      });
+   })();
+</script>
 </body>
 </html>
