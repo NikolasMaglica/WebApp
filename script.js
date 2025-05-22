@@ -137,6 +137,18 @@ const translations = {
     }
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const message = document.getElementById("sendmessage");
+    const button = document.getElementById("submitBtn");
+
+    if (form && message && button) {
+        form.addEventListener("submit", function () {
+            button.disabled = true;
+            message.style.display = "block";
+        });
+    }
+});
 
 function changeLanguage(lang) {
     document.querySelectorAll('.translate').forEach(element => {
