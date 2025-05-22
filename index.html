@@ -233,25 +233,36 @@
           <div class="col-lg-5 col-md-8">
             <div class="form">
               <div id="sendmessage" class="translate" data-key="send_success">Poruka je poslana. Hvala Vam!</div>              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
+              <form action="https://formsubmit.co/tvoj.email@email.com" method="POST" role="form" class="contactForm">
+                <!-- Anti-spam polje -->
+                <input type="text" name="_honey" style="display:none">
+              
+                <!-- Onemogući captcha -->
+                <input type="hidden" name="_captcha" value="false">
+              
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Ime i prezime " data-rule="minlen:4" data-msg="Molimo Vas unesite minimalno 4 znaka" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Ime i prezime" required>
                   <div class="validation"></div>
                 </div>
+              
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Molimo Vas upišite ispravnu email adresu" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                   <div class="validation"></div>
                 </div>
+              
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Naslov poruke" data-rule="minlen:4" data-msg="Molimo Vas upišite najmanje 8 znakova" />
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Naslov poruke" required>
                   <div class="validation"></div>
                 </div>
+              
                 <div class="form-group">
-                  <textarea class="form-control" name="message" id="body" rows="5" data-rule="required" data-msg="Napišite poruku" placeholder="Poruka"></textarea>
+                  <textarea class="form-control" name="message" id="body" rows="5" required placeholder="Poruka"></textarea>
                   <div class="validation"></div>
                 </div>
-                <button type="submit" class="translate"  onclick="SendMail()">Pošalji poruku</button>
+              
+                <button type="submit" class="translate">Pošalji poruku</button>
               </form>
+              
             </div>
           </div>
 
