@@ -67,10 +67,10 @@ const translations = {
         "service3_desc": "Design and improvement of electrical systems, including creation and testing of new solutions for performance optimization.",
         "service4_title": "Automation",
         "service4_desc": "Implementation of automated solutions in industrial processes, including programming and configuration of electronic system components.",
-        "service5_title": "Commissioning",
-        "service5_desc": "Inspection and analysis of electrical installations and components to ensure quality, safety and compliance with technical standards.",
-        "service6_title": "Testing",
-        "service6_desc": "Final testing and startup of electrical systems after installation to ensure proper operation and functionality.",
+        "service6_title": "Commissioning",
+        "service6_desc": "Inspection and analysis of electrical installations and components to ensure quality, safety and compliance with technical standards.",
+        "service5_title": "Testing",
+        "service5_desc": "Final testing and startup of electrical systems after installation to ensure proper operation and functionality.",
         "team_title": "TEAM",
         "founder_director": "Founder & Director",
         "josip_name": "Josip Lukić",
@@ -185,6 +185,6 @@ name:document.getElementById("body").value,
 
 }
 
-emailjs.send("service_xfcimtb","template_ofuwodh",parms).then(alert("Email sent!!"))
+emailjs.send("service_z47trhr","template_rbe9hip",parms).then(alert("Email sent!!"))
 
 }
