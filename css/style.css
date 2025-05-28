@@ -1,12 +1,4 @@
-/*
-  Theme Name: Regna
-  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+
 body {
   background: #fff;
   color: #666666;
@@ -164,11 +156,25 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative;
 }
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/hero-bg.jpg) top center;
+  background-size: cover;
+  position: relative;
+}
 @media (max-width: 768px) {
   #hero {
-    background: url(../img/izrezak.jpg) no-repeat center center;
-    background-size: cover; /* Održava dobar prikaz slike */
-    background-attachment: scroll; /* Onemogućuje fiksni background na mobitelima */
+  background: url(../img/slika_izrezak.JPG) center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 }
 @media (min-width: 1024px) {
@@ -176,7 +182,6 @@ h1, h2, h3, h4, h5, h6 {
     background-attachment: fixed;
   }
 }
-
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
