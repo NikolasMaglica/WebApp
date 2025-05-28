@@ -233,14 +233,16 @@
           <div class="col-lg-5 col-md-8">
             <div class="form">
               <div id="sendmessage" class="translate" data-key="send_success">Poruka je poslana. Hvala Vam!</div>              <div id="errormessage"></div>
-              <form action="https://formsubmit.co/e25b1232f4b81b0d89aee5583cbbe742" method="POST" role="form" class="contactForm">
-                <input type="text" name="_honey" style="display:none">
+             <form action="https://formsubmit.co/e25b1232f4b81b0d89aee5583cbbe742" method="POST" role="form" class="contactForm">
+
+  <!-- Spam zaštita -->
+  <input type="text" name="_honey" style="display:none">
 
   <!-- Onemogući captcha -->
   <input type="hidden" name="_captcha" value="false">
 
-  <!-- Nakon slanja vrati korisnika na sekciju #kontakt -->
-  <input type="hidden" name="_next" value="https://proltest.netlify.app">
+  <!-- Nakon slanja preusmjeri s #success -->
+  <input type="hidden" name="_next" value="https://proltest.netlify.app#success">
 
   <div class="form-group">
     <input type="text" name="name" class="form-control" id="name" placeholder="Ime i prezime" required>
@@ -262,7 +264,12 @@
     <div class="validation"></div>
   </div>
 
-  <button id="submitBtn" type="submit" data-key="submit_button" class="translate">Pošalji poruku</button>
+  <button id="submitBtn" type="submit" class="translate">Pošalji poruku</button>
+
+  <!-- Poruka ispod gumba -->
+  <div id="mail-success-msg" style="display:none; background-color: #d4edda; color: #155724; padding: 12px; margin-top: 15px; border: 1px solid #c3e6cb; border-radius: 5px;">
+    Poruka je uspješno poslana. Hvala Vam!
+  </div>
 </form>
 
               

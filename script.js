@@ -189,3 +189,14 @@ name:document.getElementById("body").value,
 emailjs.send("service_z47trhr","template_rbe9hip",parms).then(alert("Email sent!!"))
 
 }
+window.addEventListener('load', function () {
+  if (window.location.hash === "#success") {
+    const msgBox = document.getElementById("mail-success-msg");
+    if (msgBox) {
+      msgBox.style.display = "block";
+      setTimeout(function () {
+        location.href = location.origin + location.pathname; // Refresh bez #success
+      }, 2000); // 2 sekunde
+    }
+  }
+});
